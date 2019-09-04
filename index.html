@@ -5,13 +5,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+    #gb{
+    position:fixed;
+    top:20px;
+    z-index:+1000;
+    }* html #gb{position:relative;}
+    
+    .gbtab{
+    height:150px;
+    width:50px;
+    float:left;
+    background:url('http://red3vil.jw.lt/CHAT.png') no-repeat;
+    }
+    
+    .gbcontent {
+    float:left;
+    border:1px solid #BB0000;
+    -moz-border-radius-bottomleft:10px;
+    -webkit-border-radius-bottomleft:10px;
+    -o-border-radius-bottomleft:10px;
+    -khtml-border-radius-bottomleft:10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-topleft: 10px;
+    background: #000000 url(http://dimash.mw.lt/redstar.gif) no-repeat bottom;
+    padding:10px;
+    }
+    
+    </style>
+    
+    <script type="text/javascript">
+    function showHideGB(){
+    var gb = document.getElementById("gb");
+    var w = gb.offsetWidth;
+    gb.opened ? moveGB(0, 51-w) : moveGB(30-w, 0);
+    gb.opened = !gb.opened;
+    }function moveGB(x0, xf){
+    
+    var gb = document.getElementById("gb");
+    var dx = Math.abs(x0-xf) > 25 ? 25 : 1;
+    var dir = xf>x0 ? 1 : -1;
+    var x = x0 + dx * dir;
+    gb.style.right = x.toString() + "px";
+    if(x0!=xf){setTimeout("moveGB("+x+", "+xf+")", 5);}
+    }</script>
+
 <style>
 body {
+  cursor: url("https://lh3.googleusercontent.com/_1j80TgNqd_8/TWUlx0EmpoI/AAAAAAAABzs/wVZkoKHfG3s/arrowq.gif"), default;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: #333;
 }
 .social{
-    background-color: #1abc9c;
+    background-color:black;
     width: auto;
 }
 /* Social Okey*/
@@ -67,8 +114,8 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #1abc9c;
-  color: white;
+  background: url();
+  color:black;
 }
 
 /* Increase the font size of the h1 element */
@@ -124,14 +171,49 @@ h2{
 h3{
    margin-left: 4cm;
 }
+.frame{
+    margin-left: 7cm;
+}
+iframe{
+    overflow: hidden;
+}
 .footer {
+    margin-top: 0;
+  overflow: hidden;
   padding: 20px;
   text-align: center;
   background: #ddd;
 </style>
 </head>
 <body>
-    <!-- Add font awesome icons -->
+    <!--  Hacker Script JANGAN OTAK ATIK   --!>
+        <div id="gb" style="right: -1px;">
+                <div class="gbtab" onmouseover="showHideGB()"> </div>
+                
+                <div class="gbcontent">
+                <center>
+                <!-- BEGIN CBOX - www.cbox.ws - v001 -->
+                <div id="cboxdiv" style="text-align:center; line-height:0;background-position:center;background:url(http://dimash.waphall.com/cboxx.jpg
+                );width:200px;height:350px;background-repeat:no-repeat;">
+                <div><iframe frameborder="0" width="200" height="263" src="http://www4.cbox.ws/box/?boxid=3933480&amp;boxtag=jxvsgp&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain" style="border:#FC1100 1px solid;" id="cboxmain"></iframe></div>
+                <div><iframe frameborder="0" width="200" height="117" src="http://www4.cbox.ws/box/?boxid=3933480&amp;boxtag=jxvsgp&amp;sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform" style="border:#FC1100 1px solid;border-top:0px" id="cboxform"></iframe></div>
+                </div>
+                <!-- END CBOX -->
+                <br>
+                <div style="text-align:center">
+                <a onclick="showHideGB()" class="tips-fade" title="klik untuk tutup chattingbox">
+                <center><hr><img src="http://red3vil.xtgem.com/cooltext518148514.gif"><hr></center>
+                </a>
+                
+                </div>
+                </center></div>
+                <script type="text/javascript">
+                var gb = document.getElementById("gb");
+                gb.style.right = (50-gb.offsetWidth).toString() + "px";
+                </script></div>
+                </div>
+
+    <!-- Add awesome icons -->
 <div class="social">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
@@ -141,11 +223,12 @@ h3{
 <a href="#" class="fa fa-instagram"></a>
 <a href="#" class="fa fa-pinterest"></a>
 </div>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/613595466&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
 <div class="header">
   <h1>Welcome To My Profile</h1>
   <p>This Is My Short Profile</p>
 </div>
-
+    </iframe>
 <div class="navbar">
 <a href="beranda.html" title="beranda">Beranda</a>
   <a href="News.html" title="News Masterman">NEWS</a>
@@ -160,15 +243,19 @@ h3{
       /*\       
      /_*_\      
     {('o')}     ┌─┐┌─┐┌┬┐┌─┐┬  ┌─┐┌┬┐┌┬┐┌─┐ ┌─┐┬─┐┌─┐
- C{{([^*^])}}D  │  │ │ ││├┤ │  ├─┤ │  │ ├┤  │ │├┬┘│ ┬
-     [ * ]      └─┘└─┘─┴┘└─┘┴─┘┴ ┴ ┴  ┴ └─┘o└─┘┴└─└─┘
+ C{{([^*^])}}D  │  │ │ ││├┤ │  ├─┤ │  │ ├┤  │ │├┬┘│ ┬  
+     [ * ]      └─┘└─┘─┴┘└─┘┴─┘┴ ┴ ┴  ┴ └─┘o└─┘┴└─└─┘   
     /  Y  \     
    _\__|__/_
   (___/ \___)
 </pre>
 <h3> Masterman is once of Website Developer in Indonesia That get The Education About Website Developer From BeKRAF</h3>
- </div>
+</div>
+<div class="frame">
+<iframe class="1" width="853" height="480" src="https://www.youtube.com/embed/2LP6CssOrsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.9308046274114!2d111.49008531425304!3d-7.902298094307246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e790aa79efd972b%3A0xf09ed064954d29b2!2sUniversitas%20Darussalam%20Gontor!5e0!3m2!1sid!2sid!4v1567588280058!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
 <div class="footer">
         <h2>Footer</h2>
  </div>
