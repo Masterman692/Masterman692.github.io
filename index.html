@@ -1,264 +1,215 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Masterman Website </title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style type="text/css">
-    #gb{
-    position:fixed;
-    top:20px;
-    z-index:+1000;
-    }* html #gb{position:relative;}
-    
-    .gbtab{
-    height:150px;
-    width:50px;
-    float:left;
-    background:url('http://red3vil.jw.lt/CHAT.png') no-repeat;
-    }
-    
-    .gbcontent {
-    float:left;
-    border:1px solid #BB0000;
-    -moz-border-radius-bottomleft:10px;
-    -webkit-border-radius-bottomleft:10px;
-    -o-border-radius-bottomleft:10px;
-    -khtml-border-radius-bottomleft:10px;
-    -moz-border-radius-topright: 10px;
-    -moz-border-radius-topleft: 10px;
-    background: #000000 url(http://dimash.mw.lt/redstar.gif) no-repeat bottom;
-    padding:10px;
-    }
-    
-    </style>
-    
-    <script type="text/javascript">
-    function showHideGB(){
-    var gb = document.getElementById("gb");
-    var w = gb.offsetWidth;
-    gb.opened ? moveGB(0, 51-w) : moveGB(30-w, 0);
-    gb.opened = !gb.opened;
-    }function moveGB(x0, xf){
-    
-    var gb = document.getElementById("gb");
-    var dx = Math.abs(x0-xf) > 25 ? 25 : 1;
-    var dir = xf>x0 ? 1 : -1;
-    var x = x0 + dx * dir;
-    gb.style.right = x.toString() + "px";
-    if(x0!=xf){setTimeout("moveGB("+x+", "+xf+")", 5);}
-    }</script>
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<style>
-body {
-  cursor: url("https://lh3.googleusercontent.com/_1j80TgNqd_8/TWUlx0EmpoI/AAAAAAAABzs/wVZkoKHfG3s/arrowq.gif"), default;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background-color: #333;
-}
-.social{
-    background-color:black;
-    width: auto;
-}
-/* Social Okey*/
-.fa{
-  padding: 5px;
-  font-size: 20px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 10px 10px;
-}
-.fa:hover {
-    opacity: 0.7;
-}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Hi, my name is Forty</h1>
+							</header>
+							<div class="content">
+								<p>A responsive site template designed by HTML5 UP<br />
+								and released under the Creative Commons.</p>
+								<ul class="actions">
+									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
+				<!-- Main -->
+					<div id="main">
 
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Aliquam</a></h3>
+										<p>Ipsum dolor sit amet</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Tempus</a></h3>
+										<p>feugiat amet tempus</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Magna</a></h3>
+										<p>Lorem etiam nullam</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Ipsum</a></h3>
+										<p>Nisl sed aliquam</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Consequat</a></h3>
+										<p>Ipsum dolor sit amet</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Etiam</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+							</section>
 
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
+						<!-- Two -->
+							<section id="two">
+								<div class="inner">
+									<header class="major">
+										<h2>Massa libero</h2>
+									</header>
+									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<ul class="actions">
+										<li><a href="landing.html" class="button next">Get Started</a></li>
+									</ul>
+								</div>
+							</section>
 
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
+					</div>
 
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
 
-/* Style the header */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: url();
-  color:black;
-}
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
 
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
-}
+			</div>
 
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-/* Style the navigation bar links */
-.navbar a {
-
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 40px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.master-profile{
-    color:green;
-    overflow: hidden;
-    background-color:black;
-    width: auto;
-    margin-top: 0;
-}
-.master-profile pre{
-    margin-left: 15cm;
-}
-
-}
-h2{
-   color:black;
-   font-size: 20;
-   text-align: center;
-   font-family: 'Awesome';
-}
-h3{
-   margin-left: 4cm;
-}
-.frame{
-    margin-left: 7cm;
-}
-iframe{
-    overflow: hidden;
-}
-.footer {
-    margin-top: 0;
-  overflow: hidden;
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-</style>
-</head>
-<body>
-    <!--  Hacker Script JANGAN OTAK ATIK   --!>
-        <div id="gb" style="right: -1px;">
-                <div class="gbtab" onmouseover="showHideGB()"> </div>
-                
-                <div class="gbcontent">
-                <center>
-                <!-- BEGIN CBOX - www.cbox.ws - v001 -->
-                <div id="cboxdiv" style="text-align:center; line-height:0;background-position:center;background:url(http://dimash.waphall.com/cboxx.jpg
-                );width:200px;height:350px;background-repeat:no-repeat;">
-                <div><iframe frameborder="0" width="200" height="263" src="http://www4.cbox.ws/box/?boxid=3933480&amp;boxtag=jxvsgp&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain" style="border:#FC1100 1px solid;" id="cboxmain"></iframe></div>
-                <div><iframe frameborder="0" width="200" height="117" src="http://www4.cbox.ws/box/?boxid=3933480&amp;boxtag=jxvsgp&amp;sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform" style="border:#FC1100 1px solid;border-top:0px" id="cboxform"></iframe></div>
-                </div>
-                <!-- END CBOX -->
-                <br>
-                <div style="text-align:center">
-                <a onclick="showHideGB()" class="tips-fade" title="klik untuk tutup chattingbox">
-                <center><hr><img src="http://red3vil.xtgem.com/cooltext518148514.gif"><hr></center>
-                </a>
-                
-                </div>
-                </center></div>
-                <script type="text/javascript">
-                var gb = document.getElementById("gb");
-                gb.style.right = (50-gb.offsetWidth).toString() + "px";
-                </script></div>
-                </div>
-
-    <!-- Add awesome icons -->
-<div class="social">
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-pinterest"></a>
-</div>
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/613595466&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-<div class="header">
-  <h1>Welcome To My Profile</h1>
-  <p>This Is My Short Profile</p>
-</div>
-    </iframe>
-<div class="navbar">
-<a href="beranda.html" title="beranda">Beranda</a>
-  <a href="News.html" title="News Masterman">NEWS</a>
-  <a href="Award.html" title=" Awards masterman">AWARDS</a>
-  <a href="Diary.html" title="Diary Masterman">DIARY</a>
-  <a href="About-Me.html" class="right">ABOUT Me</a>
-</div>
-<div class="master-profile">
-<pre>
-       _
-      {_}
-      /*\       
-     /_*_\      
-    {('o')}     ┌─┐┌─┐┌┬┐┌─┐┬  ┌─┐┌┬┐┌┬┐┌─┐ ┌─┐┬─┐┌─┐
- C{{([^*^])}}D  │  │ │ ││├┤ │  ├─┤ │  │ ├┤  │ │├┬┘│ ┬  
-     [ * ]      └─┘└─┘─┴┘└─┘┴─┘┴ ┴ ┴  ┴ └─┘o└─┘┴└─└─┘   
-    /  Y  \     
-   _\__|__/_
-  (___/ \___)
-</pre>
-<h3> Masterman is once of Website Developer in Indonesia That get The Education About Website Developer From BeKRAF</h3>
-</div>
-<div class="frame">
-<iframe class="1" width="853" height="480" src="https://www.youtube.com/embed/2LP6CssOrsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.9308046274114!2d111.49008531425304!3d-7.902298094307246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e790aa79efd972b%3A0xf09ed064954d29b2!2sUniversitas%20Darussalam%20Gontor!5e0!3m2!1sid!2sid!4v1567588280058!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-<div class="footer">
-        <h2>Footer</h2>
- </div>
-      </html>
-</body>
+	</body>
 </html>
